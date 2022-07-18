@@ -17,7 +17,6 @@ Git branch: é você listar as ramificações que existem em um determinado repo
 
 link: https://git-scm.com/downloads
 
-
 -----------------------------
 
 git init: Para iniciar um repositório em uma pasta local do seu computador
