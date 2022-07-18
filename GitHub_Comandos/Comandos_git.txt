@@ -54,6 +54,72 @@ Deletando uma branch:
 
 git branch -d <nome-da-branch>
 
+%%%%%%%%%%%%%%%%%
+% Git Check Out %
+%%%%%%%%%%%%%%%%%
+
+ - Git Check Out: uma das mais utilizadas
+ 
+Usamos git check Out quando queremos alterar de uma branch para outra
+ - também pode ser utilizada para verificar arquivos e commits
+ 
+ git checkout <nome-da-branch>
+
+Atalho: permite criar e alternar para uma branch ao mesmo tempo
+
+git checkout -b <nome-da-branch>
+
+%%%%%%%%%%%%%%
+% Git Status %
+%%%%%%%%%%%%%%
+
+Fornece todas as informações necessárias sobre a branch atual
+ - por exemplo: alteração não comitada, alteração em arquivos
+
+git status
+
+%%%%%%%%%%%
+% Git Add %
+%%%%%%%%%%%
+
+Permite incluir as alterações em um arquivo no nosso próximo commit
+
+ - Para adicionar um arquivo:
+ git add <arquivo>
+ 
+ - Para adicionar tudo de uma vez
+ git add -A
+ git add *
+
+%%%%%%%%%%%%%%
+% Git Commit %
+%%%%%%%%%%%%%%
+
+Este comando defini um ponto de verificação no processo de desenvolvimento para o qual você pode voltar mais tarde, se necessário
+
+ git commit -m "mensagem explicando a mudança no código"
+
+%%%%%%%%%%%%
+% Git Push %
+%%%%%%%%%%%%
+
+O comando git push envia e salva suas confirmações no repositório remoto
+
+git push <remote> <nome-do-branch>
+
+No entanto, se seu branch for criado recentemente, você também precisará fazer upload do branch com o seguinte comando:
+
+git push -u origin <nome-do-branch>
+
+%%%%%%%%%%%%
+% Git Pull %
+%%%%%%%%%%%%
+
+O comando git pull é usado para obter atualizações do respositório remoto
+
+git pull <remote>
+
+
 
 
 
