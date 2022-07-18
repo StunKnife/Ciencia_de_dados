@@ -1,1 +1,50 @@
 # Comandos do Git Hub
+
+Git clone: é você clonar um repositorio remoto em sua máquina local
+
+Git branch: é você listar as ramificações que existem em um determinado repositório
+
+----------Download-----------
+
+link: https://git-scm.com/downloads
+
+
+-----------------------------
+
+git init: Para iniciar um repositório em uma pasta local do seu computador
+
+-----------Comando----------
+
+O git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github,por exemplo)
+
+git clone <URL>
+
+----
+
+Pode-se usar o comando git branch para criar, listar e excluir branches. Criando uma nova branch: (cria branch local)
+
+git branch <nome-do-branch>
+
+----
+
+Para enviar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
+
+git push -u <remote> <nome-da-branch>
+
+----
+
+Para ver as branches: 
+
+git branch
+
+git branch --list
+
+----
+
+Deletando uma branch:
+
+git branch -d <nome-da-branch>
+
+
+
+
