@@ -4,6 +4,15 @@ Git clone: é você clonar um repositorio remoto em sua máquina local
 
 Git branch: é você listar as ramificações que existem em um determinado repositório
 
+-----------Problemas---------
+
+É importante que cada desenvolvedor trabalhe em sua branch para diminuir conflito nos commits
+ - problema: sobrescrever códigos execultados.
+ - Soluação: trabalhar em branchs diferentes
+ 
+ Obs: Várias branchs para um mesmo projeto
+
+
 ----------Download-----------
 
 link: https://git-scm.com/downloads
