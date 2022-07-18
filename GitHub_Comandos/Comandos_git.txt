@@ -22,25 +22,21 @@ link: https://git-scm.com/downloads
 
 git init: Para iniciar um repositório em uma pasta local do seu computador
 
------------Comando----------
+%%%%%%%%%%%%%
+% Git Clone %
+%%%%%%%%%%%%%
 
 O git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github,por exemplo)
 
 git clone <URL>
 
-----
+%%%%%%%%%%%%%%
+% Git branch %
+%%%%%%%%%%%%%%
 
 Pode-se usar o comando git branch para criar, listar e excluir branches. Criando uma nova branch: (cria branch local)
 
 git branch <nome-do-branch>
-
-----
-
-Para enviar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
-
-git push -u <remote> <nome-da-branch>
-
-----
 
 Para ver as branches: 
 
@@ -110,6 +106,11 @@ git push <remote> <nome-do-branch>
 No entanto, se seu branch for criado recentemente, você também precisará fazer upload do branch com o seguinte comando:
 
 git push -u origin <nome-do-branch>
+
+
+Para enviar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
+
+git push -u <remote> <nome-da-branch>
 
 %%%%%%%%%%%%
 % Git Pull %
