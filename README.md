@@ -10,3 +10,5 @@ A utilização de um versionamento de código com o git garante um controle maio
 - Como mais de um desenvolvedor atua nesta situação, é mais difícil garantir uma padronização total do código.
 
 As alterações feitas no ambiente de trabalho devem ser atualizadas no repositório remoto para que os outros desenvolvedores tenham acesso. Para fazer isso é necessário utilizar o comando git push.
+
+Chamamos de ambiente de desenvolvimento o lugar onde as alterações no código são feitas, eles são situados na própria máquina, ou seja, são locais. O servidor, por sua vez, é remoto, não fica situado na máquina.
