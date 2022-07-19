@@ -119,7 +119,34 @@ O comando git pull é usado para obter atualizações do respositório remoto
 
 git pull <remote>
 
+%%%%%%%%%%%%%%
+% Git Revert %
+%%%%%%%%%%%%%%
+uma maneira segura de desfazer os commits
+
+git revert 'numero do hash'
+
+o numero do hash pode ser conseguido pelo comando
+git log --oneline
+
+%%%%%%%%%%%%%
+% Git Merge %
+%%%%%%%%%%%%%
+
+Quando você conlui o desenvolvimento em sua branch e tudo funciona bem
+a etapa final é mesclar as branches
+
+git merge <nome-da-branch>
 
 
+%%%%%%%%%%%%
+% Git Flow %
+%%%%%%%%%%%%
+
+Ele é um guia de boas práticas
+É interessante se trabalhar com duas branches
+
+ - main: ira guiar o desenvolvimento
+ - develope: dos desenvolvedores
 
 
