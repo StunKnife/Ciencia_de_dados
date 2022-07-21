@@ -20,6 +20,20 @@ baixar também o gui client (interface)
  - guiKraken
 -----------------------------
 
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Prompt ou Git Bash %
+%%%%%%%%%%%%%%%%%%%%%%
+
+Procura a pasta pelo caminho
+cd caminho
+
+volta um passo na pasta
+cd .. 
+
+Cria uma nova pasta
+mkdir nome
+
 git init: Para iniciar um repositório em uma pasta local do seu computador
 
 %%%%%%%%%%%%%
