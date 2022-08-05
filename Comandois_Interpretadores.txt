@@ -1,0 +1,110 @@
+
+Principais comandos para interpretadores
+
+* Windows
+ - Mudar de past: .cd
+ - Voltar uma pasta: cd ..
+ - Listar pastas: .dir
+ - Criar pastas/Arquivo: mkdir
+ - Remover pasta/arquivo: del/rmdir
+
+* Linux
+ - Mudar de past: .cd
+ - Listar pastas: .ls
+ - Criar pastas/Arquivo: mkdir
+ - Remover pasta/arquivo: rm-rf
+ 
+ Git init: O git init é utilizado sempre que precisamos iniciar o interpretador.
+ 
+ Git config: Coloque o seu user name do github após o user.name: git config --global user.name
+             Coloque seu e-mail utilizado no github: git config --global user.email
+             
+Git clone: o git clone é um comando para baixar o código fonte existente de um repositório remoto. A seguir está um print de onde fica link para clonar o repositório
+  É um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo)
+  git clone https://www.batatinha.dnc É o comando para realizar o download
+  
+  Git Branch: Com as branchs, vários desenvolvedores podem trabalhar em paralelo no mesmo projeto simultaneamente. Pode-se utilizar o comando git branch para criar, listar e excluir branchs.
+  Para visualizar as branchs: git branch or git branch --list
+  Para deletar uma branch: git branch -d nome-da-branch
+  Para subir a branch no github: gitpush -u remote; nome da branch  
+  As branchs são diferentes pastas que os desenvolvedores podem trabalhar paralelamente sem interferir no código de outro desenvolvedor.
+  
+ Com branches, vários desenvolvedores podem trabalhar em paralelo no mesmo projeto simultaneamente. Pode-se usar o comando git branch para criar, listar e excluir branches
+
+Criando uma nova branch:
+  git branch Este comando criará uma branch localmente. Sendo necessário subir essa branch em um repositório remoto
+  Para enviarmos uma branch para o repositório remoto, você precisa usar o seguinte comando: git push -u
+  Para ver as branches: *git branch ou git branch --list*
+  Deletando uma branch: git branch -d
+  
+  Este comando é para fazer a mudança da branch para trabalhar dentro dela.
+
+  O git checkout é um dos comandos Git mais usados. Para trabalhar em uma branch, primeiro você precisa mudar para ela.
+Usamos o Git checkout principalmente para alternanr de uma branch para outra. Também podemos usá-lo para verificar arquivos e commits:
+git checkout Comando que direciona a branch, porque uma vez que ela está criada não significa que você vai trabalhar nessa branch.
+Há um atalho que permite criar e trocar para uma branch ao mesmo tempo, git checkout -b
+  git checkout -b nome da branch
+  
+  Git status: Fornece todas as informações necessárias sobre os arquivos que se encontram na branch atual
+
+O comando status do Git status fornece todas as informações necessária sobre o branch atual, se houve alguma alteração no arquivo, ação não commitada.
+Comando: git status
+
+Git add: Esse comando inclui todas as alterações realizadas em um arquivo específico ou em todos eles de uma só vez na stage.
+
+Incluir alterações de um arquivo em um próximo commit. Precisamos usar o comando git add para incluir as alterações de um arquivo em nosso próximo commit.
+Para adicionar um arquivo: git add
+Para adicionar tudo de uma vez: git add -A ou git add *
+Comando: git add arquivo ou git add *
+
+Git commit: É o comando que rastrea o que você fez no arquivo e define o ponto de verificação no processo de desenvolvimento, é como se fosse a foto do arquivo.
+
+git commit -m “mensagem explicando a mudança no código”
+
+Git push: Comando que envia e salva as confirmações no repositório remoto.
+git push remote; nome da branch
+
+git push , o nome da branch e remote são comandos opcionais, apenas git push já direciona aquela branch em questão para o repositório.
+No entanto, se seu branch for criado recentemente, você também precisará fazer upload da branch com o seguinte comando:
+git push -u origin
+git push -u origin nome da branch
+
+Git pull: O comando git pull é utilizado para obter atualizações do repositório remoto.
+
+O comando git pull é usado para obter atualizações do repositório remoto.
+git pull é exatamente o oposto do git push, enquanto um empurra as modificações de uma branch para o repositório remoto, pull traz essas atualizações do repositório remoto para o local.
+git pull remote
+
+Git revert: Maneira segura de desfazer os commits.
+
+Uma maneira segura de desfazer os commits é usando o git revert
+git revert ‘número do hash’
+O número do hash pode ser botido pelo comando git log --oneline
+git revert 'número do hash'
+
+O número de hash pode ser adquirido pelo comando
+
+git log --oneline
+
+Git merge: Quando você conclui o desenvolvimento em sua branch, a etapa final é mesclar as branchs para que seu código parcial faça parte do código final do projeto.
+
+git merge:
+Na branch principal você usa esse comando para juntar a branch desejada, e aí as alterações feitas nessa branch secundárias serão refletidas na sua principal.
+git merge nome da branch que você estava trabalhando
+
+
+Git flow: É a boa prática de separação das branchs, inicia-se com a branch develop e dela sai as releases que são as entregas do projeto, e depois ela volta para a branch develop, ao final do processo fazemos o merge entre a branch develop e a main.
+
+Basicamente é um guia de boas práticas para utilização das branches dentro do github, existem:
+git workflow
+github flow
+São diversas nomenclaturas mas o que realmente importa é lembrar que esse esquema de branch existem, você trabalhar com duas principais
+Develop → Dos desenvolvedores responsáveis pelo desenvolvimento
+Main → Branch que irá guiar o desenvolvimento
+As duas branches se conversam dentro das releases, fechando a entrega do projeto e eventuais incrementos futuros.
+
+
+
+
+
+
